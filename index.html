@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Minimalist 3D Showcase</title>
+
+  <!-- Google Fonts: Urbanist -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top-Left Floating Glassmorphism Navigation Pill -->
+  <header class="nav-wrapper">
+    <nav class="glass-nav" aria-label="Primary Navigation">
+      <div class="nav-links" id="nav-links">
+        <span class="nav-slider" id="nav-slider" aria-hidden="true"></span>
+        <a href="#home" class="nav-link active" data-i18n="nav.home">home</a>
+        <a href="#project" class="nav-link" data-i18n="nav.project">project</a>
+        <a href="#skills" class="nav-link" data-i18n="nav.skills">skills</a>
+        <a href="#about" class="nav-link" data-i18n="nav.about">about</a>
+        <a href="#social" class="nav-link" data-i18n="nav.social">social media</a>
+      </div>
+
+      <div class="nav-divider" aria-hidden="true"></div>
+
+      <!-- Compact EN / MY Language Switcher -->
+      <div class="lang-switcher" role="group" aria-label="Language Switcher">
+        <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+        <span class="lang-sep">/</span>
+        <button type="button" class="lang-btn" data-lang="my" aria-pressed="false">MY</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <!-- Left Side: Minimalist Heading -->
+      <div class="hero-content">
+        <h1 class="hero-title" data-i18n="hero.title"><b>welcome to my portfolio.<b/></h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">
+          The person who wanna trying larping on ICT's World
+        </p>
+      </div>
+
+      <!-- Right Side: 3D Spear of Longinus Canvas -->
+      <div class="hero-canvas-area" id="spear-container" aria-label="Interactive 3D Spear of Longinus">
+        <canvas id="spear-canvas"></canvas>
+      </div>
+    </section>
+
+    <!-- Project Section (1 Box = 1 Image) -->
+    <section id="project" class="section">
+      <div class="section-header">
+        <span class="section-kicker" data-i18n="project.kicker">01 / selected works</span>
+        <h2 class="section-title" data-i18n="project.title">project</h2>
+      </div>
+
+      <!-- Replace src="project1.jpg" etc. with your own image filenames -->
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-image-box">
+            <img src="project1.jpg" alt="Project 01 preview" class="project-img">
+          </div>
+          <div class="project-meta">
+            <h3 class="project-name" data-i18n="project.p1.title">Technician for Hardware</h3>
+            <span class="project-tag">Hardware / Flashing</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image-box">
+            <img src="project2.jpg" alt="Project 02 preview" class="project-img">
+          </div>
+          <div class="project-meta">
+            <h3 class="project-name" data-i18n="project.p2.title">UI Web Designer</h3>
+            <span class="project-tag">Design System / CSS</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image-box">
+            <img src="project3.jpg" alt="Project 03 preview" class="project-img">
+          </div>
+          <div class="project-meta">
+            <h3 class="project-name" data-i18n="project.p3.title">Virtual Machine</h3>
+            <span class="project-tag">Linux / OS</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="section-header">
+        <span class="section-kicker" data-i18n="skills.kicker">02 / capabilities</span>
+        <h2 class="section-title" data-i18n="skills.title">skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3 class="skill-heading" data-i18n="skills.g1.title">System Computer</h3>
+          <ul class="skill-list">
+            <li>Installation OS</li>
+            <li>Networking</li>
+            <li>Maintainance PC</li>
+            <li>Flashing OS</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-heading" data-i18n="skills.g2.title">Cyber Security</h3>
+          <ul class="skill-list">
+            <li>Artificial Intelligence</li>
+            <li>Cryptography</li>
+            <li>Digital Forensic</li>
+            <li>OSINT</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-heading" data-i18n="skills.g3.title">Basic Web Development</h3>
+          <ul class="skill-list">
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>C++</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="section-header">
+        <span class="section-kicker" data-i18n="about.kicker">03 / profile</span>
+        <h2 class="section-title" data-i18n="about.title">about</h2>
+      </div>
+
+      <div class="about-layout">
+        <p class="about-lead" data-i18n="about.lead">
+         I am a student studying about Technology System Computer and I love making website its make me obsess
+        </p>
+        <p class="about-body" data-i18n="about.body">
+         Every project and experiment i'm just using laptop.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Social Media Footer -->
+  <footer id="social" class="footer">
+    <div class="footer-inner">
+      <div>
+        <span class="section-kicker" data-i18n="social.kicker">04 / connect</span>
+        <h2 class="footer-title" data-i18n="social.title">social media</h2>
+      </div>
+
+      <div class="social-links">
+        <a href="https://github.com/" target="manyagami" rel="noopener noreferrer" class="social-link">GitHub</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+        <a href="https://instagram.com/" target="mandarwishhhh" rel="noopener noreferrer" class="social-link">Instagram</a>
+        <a href="mailto:mandarwish@gmail.com" class="social-link" data-i18n="social.email">Email</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright" data-i18n="footer.copy">© 2026 xianhat</p>
+      <a href="#home" class="back-top" data-i18n="footer.top">back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- Three.js r147 Classic UMD Scripts (work offline via file://) -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.147.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
