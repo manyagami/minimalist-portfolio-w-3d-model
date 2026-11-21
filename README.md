@@ -68,5 +68,6 @@ The **Projects** section presents a curated showcase of my featured works, demon
 - Email: mandarwish017@gmail.com
 - 
 ----
+### Credit
 - Red Spear (Spear of Longinus) Design: Inspired by and based on Neon Genesis Evangelion (Hideaki Anno / Gainax / Studio Khara). Full credit goes to the original creators for the iconic weapon design.
 - 3D Model: Custom 3D model created and showcased strictly for personal portfolio and non-commercial purposes.
